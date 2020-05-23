@@ -11,4 +11,6 @@ public interface CustomerService {
 	void save(Customer customer);
 
 	Customer findById(int customerId);
+
+	void delete(int customerId);
 }
