@@ -6,5 +6,7 @@ import com.sametsafkan.entity.Customer;
 
 public interface CustomerDAO {
 
-	public List<Customer> getCustomers();
+	List<Customer> getCustomers();
+
+	void save(Customer customer);
 }

@@ -7,4 +7,6 @@ import com.sametsafkan.entity.Customer;
 public interface CustomerService {
 
 	List<Customer> getCustomers();
+
+	void save(Customer customer);
 }

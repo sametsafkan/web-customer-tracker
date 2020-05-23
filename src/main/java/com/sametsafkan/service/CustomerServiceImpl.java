@@ -13,13 +13,19 @@ import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
-public class CustomerServiceImpl implements CustomerService{
+public class CustomerServiceImpl implements CustomerService {
 
 	private final CustomerDAO customerDao;
-	
+
 	@Override
 	@Transactional
 	public List<Customer> getCustomers() {
 		return customerDao.getCustomers();
+	}
+
+	@Override
+	@Transactional
+	public void save(Customer customer) {
+		customerDao.save(customer);
 	}
 }
